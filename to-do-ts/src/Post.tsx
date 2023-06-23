@@ -1,6 +1,6 @@
 
 
 export function Post() {
-  return <p>OI</p>
+  return <p></p>
 }
 
