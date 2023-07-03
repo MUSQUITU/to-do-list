@@ -1,3 +1,5 @@
+import {PlusCircle} from 'phosphor-react'
+
 import styles from './Post.module.css'
 
 export function Post() {
@@ -7,10 +9,10 @@ export function Post() {
         <textarea 
           placeholder='Adicione uma nova tarefa'
         />
-
-        <button type='submit'>Criar</button>
+        <button type='submit'>Criar <PlusCircle size={20}/>
+        </button>
       </form>
-
+    
   )
 }
 
