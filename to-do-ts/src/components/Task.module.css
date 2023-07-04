@@ -1,0 +1,42 @@
+.task {
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+
+  grid-template-columns: 352px 1fr;
+  gap: 2rem;
+  align-items: center;
+
+  color: var(--gray-100);
+
+}
+
+.task header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.listToDo {
+  margin-top:1rem;
+  border-radius: 8px;
+  background: var(--gray-500);
+  padding: 1rem 1rem;
+  line-height: 1.4;
+  text-align: start;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.listToDo > input{
+  margin-top: 0.4rem;
+}
+
+.listToDo > p{
+  display: flex;
+  
+}
+
