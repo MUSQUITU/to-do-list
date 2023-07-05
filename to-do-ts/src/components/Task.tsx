@@ -7,18 +7,24 @@ export function Task() {
       <header>
         <div className={styles.createTask}>
           <strong>Tarefas criadas</strong>
-          <span> 5</span>
+          <span>1</span>
         </div>
 
         <div className={styles.concluded}>
-          <strong>Concluídas</strong>
-          <span> 2 de 5</span>
+          <strong>Concluídas </strong>
+          <span>1 de 1</span>
         </div>
       </header>
 
       <div className={styles.listToDo}>
-        <input className={styles.check} type="checkbox" />
-        <p className={styles.listTask}> task pra fazer</p>
+
+        <div className={styles.check}>
+          <label className={styles.listTask}>
+            <input type="checkbox" />
+            <span>task pra fazer</span>
+          </label>
+        </div>
+
         <button className={styles.deleteTask} title='Deletar task'>
           <Trash size={20} />
         </button>
