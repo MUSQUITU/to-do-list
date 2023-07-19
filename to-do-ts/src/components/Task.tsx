@@ -1,27 +1,22 @@
 import { Trash } from 'phosphor-react';
 import styles from './Task.module.css';
 
-export function Task() {
+export function Task({content}) {
   return(
     <div className={styles.task}>
-      <header>
-        <div className={styles.createTask}>
-          <strong>Tarefas criadas</strong>
-          <span>1</span>
-        </div>
-
-        <div className={styles.concluded}>
-          <strong>Concluídas </strong>
-          <span>1 de 1</span>
-        </div>
-      </header>
-
+      
       <div className={styles.listToDo}>
 
         <div className={styles.check}>
           <label className={styles.listTask}>
             <input type="checkbox" />
-            <span>task pra fazer</span>
+            
+              {content.map(line => {
+                if (line.type ==='paragraph'){
+                  return <span key={line.content} > {line.content}</span>;
+                }
+              })}
+              
           </label>
         </div>
 

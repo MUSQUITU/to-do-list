@@ -2,6 +2,8 @@ import {PlusCircle} from 'phosphor-react'
 
 import styles from './Post.module.css'
 import { Task } from './Task'
+import styless from './Task.module.css';
+
 
 export function Post() {
   function handleCreateNewTask(){
@@ -20,8 +22,18 @@ export function Post() {
         </button>
       </form>
     
-    <div>
-      <Task />
+    <div className={styless.task}>
+    <header>
+        <div className={styless.createTask}>
+          <strong>Tarefas criadas</strong>
+          <span>1</span>
+        </div>
+
+        <div className={styless.concluded}>
+          <strong>Concluídas </strong>
+          <span>1 de 1</span>
+        </div>
+      </header>
     </div>
 
     </article>

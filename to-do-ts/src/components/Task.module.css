@@ -1,6 +1,6 @@
 .task {
   max-width: 50rem;
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 0 1rem;
 
 
@@ -9,8 +9,8 @@
   align-items: center;
 
   color: var(--gray-100);
-
 }
+
 
 .task header {
   display: flex;
